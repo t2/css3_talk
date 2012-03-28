@@ -51,9 +51,68 @@
 			100% {background: #AAB85C;}
 		}
 
-		div#animation {
-			width: 100%;
-			border: 1px solid red;
+		img#animation {
+			-webkit-animation: crazyAnimation 3s infinite;
+			-moz-animation: crazyAnimation 3s infinite;
+			-ms-animation: crazyAnimation 3s infinite;
+			animation: crazyAnimation 3s infinite;
+		}
+
+		@-webkit-keyframes crazyAnimation {
+			0% {
+				-webkit-transform: translate(-150px, 0px);
+				-moz-transform: translate(-150px, 0px);
+				-o-transform: translate(-150px, 0px);
+				-ms-transform: translate(-150px, 0px);
+				transform: translate(-150px, 0px);
+			}
+			25% {
+				-webkit-transform: scale(2, 4);
+				-moz-transform: scale(2, 4);
+				-o-transform: scale(2, 4);
+				-ms-transform: scale(2, 4);
+				transform: scale(2, 4);
+			}
+			50% {
+				-webkit-transform: skew(30deg, 20deg);
+				-moz-transform: skew(30deg, 20deg);
+				-o-transform: skew(30deg, 20deg);
+				-ms-transform: skew(30deg, 20deg);
+				transform: skew(30deg, 20deg);
+			}
+			75% {
+				-webkit-transform: skew(0deg, 0deg);
+				-moz-transform: skew(0deg, 0deg);
+				-o-transform: skew(0deg, 0deg);
+				-ms-transform: skew(0deg, 0deg);
+				transform: skew(0deg, 0deg);
+
+				-webkit-transform: scale(0.5, 0.25);
+				-moz-transform: scale(0.5, 0.25);
+				-o-transform: scale(0.5, 0.25);
+				-ms-transform: scale(0.5, 0.25);
+				transform: scale(0.5, 0.25);
+			}
+			85% {
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+			100% {
+				-webkit-transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				transform: rotate(180deg);
+
+				-webkit-transform: translate(150px, 0px);
+				-moz-transform: translate(150px, 0px);
+				-o-transform: translate(150px, 0px);
+				-ms-transform: translate(150px, 0px);
+				transform: translate(150px, 0px);
+			}
 		}
 	</style>
 </head>
@@ -68,12 +127,8 @@
 		</div>
 	</div>
 
-	<div>
-		<div id="animation">
-			<div id="img-to-animate">
-				<img src="trent.png" width="220" height="183" />
-			</div>
-		</div>
+	<div class="example-container">
+		<img id="animation" src="trent.png" />
 	</div>
 </body>
 </html>
