@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<title>Border</title>
+	<style type="text/css">
+		div.example-container div {
+			height: 200px;
+			width: 350px;
+			margin-left: 20px;
+			display: inline-block;
+			border: black 3px solid;
+		}
+
+		div.radius-shorthand {
+			background-color: #eead1f;
+			border-radius: 10px;
+		}
+
+		div.radius-individual {
+			background-color: #a8dbd6;
+			border-top-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+		}
+
+		div.box-shadow-outer {
+			background-color: #ea2d50;
+			/*box-shadow: 0px 8px 10px -6px black;*/
+			box-shadow: 10px 10px 5px #6d6d6d;
+		}
+
+		div.box-shadow-inset {
+			background-color: #aab85c;
+			box-shadow: 0 0 10px #333 inset;
+		}
+	</style>
+</head>
+<body>
+	<div class="example-container">
+		<div id="radius-shorthand">
+			<p>border-radius: 10px;</p>
+		</div>
+
+		<div id="radius-individual">
+			<p>
+				border-radius top-right bottom-left 20px
+			</p>
+		</div>
+	</div>
+
+	<div class="example-container">
+		<div id="box-shadow-outer">
+			<p>box-shadow: 10px 10px 5px #6d6d6d;</p>
+		</div>
+
+		<div id="box-shadow-inset">
+			<p>box-shadow: 0 0 10px #333 <strong>inset</strong>;</p>
+		</div>
+	</div>
+</body>
+</html>

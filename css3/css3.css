@@ -1,0 +1,40 @@
+body {
+	margin-top: 50px;
+}
+
+ul {
+	margin: auto;
+	margin-bottom: 20px;
+	width: 600px;
+}
+
+li {
+	display: inline-block;
+	padding: 0 10px;
+	text-decoration: none;
+	font: Helvetica;
+}
+
+a {
+	text-decoration: none;
+	font-family: Helvetica;
+	color: #EA2D50;
+}
+
+div.container {
+	width: 800px;
+	margin: auto;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+div.example-container {
+	width: 800px;
+	margin: auto;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+div.example-container div {
+	cursor: pointer;
+}

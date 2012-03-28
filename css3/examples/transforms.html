@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Transformations</title>
+	<style type="text/css">
+		div.example-container {
+			margin-bottom: 100px;
+			margin-top: 50px;
+		}
+
+		div.example-container div {
+			height: 200px;
+			width: 350px;
+			margin-left: 30px;
+			display: inline-block;
+			border: black 3px solid;
+		}
+
+		div#translate {
+			background-color: #EEAD1F;
+			-webkit-transform: translate(-50px, 0px);
+			-moz-transform: translate(-50px, 0px);
+			-o-transform: translate(-50px, 0px);
+			-ms-transform: translate(-50px, 0px);
+			transform: translate(-50px, 0px);
+		}
+
+		div#rotate {
+			background-color: #A8DBD6;
+			width: 150px;
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+
+		div#scale {
+			background-color: #AAB85C;
+			-webkit-transform: scale(0.5, 1.5);
+			-moz-transform: scale(0.5, 1.5);
+			-o-transform: scale(0.5, 1.5);
+			-ms-transform: scale(0.5, 1.5);
+			transform: scale(0.5, 1.5);
+		}
+
+		div#skew {
+			background-color: #EA2D50;
+			-webkit-transform: skew(30deg, 20deg);
+			-moz-transform: skew(30deg, 20deg);
+			-o-transform: skew(30deg, 20deg);
+			-ms-transform: skew(30deg, 20deg);
+			transform: skew(30deg, 20deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="example-container">
+		<div id="translate">
+			<p>I moved left a little...</p>
+		</div>
+
+		<div id="rotate">
+			<p>I'm rotated...</p>
+		</div>
+	</div>
+
+	<div class="example-container">
+		<div id="scale">
+			<p>I've been scaled a bit..</p>
+		</div>
+
+		<div id="skew">
+			<p>I'm skewed..</p>
+		</div>
+	</div>
+</body>
+</html>

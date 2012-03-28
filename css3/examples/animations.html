@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Animations</title>
+	<style type="text/css">
+		div.example-container div {
+			height: 200px;
+			width: 350px;
+			margin-left: 20px;
+			display: inline-block;
+			border: black 3px solid;
+		}
+
+		div#color-show-stop, div#color-show-continue {
+			background-color: #A8DBD6;
+		}
+
+		div#color-show-stop {
+			-webkit-animation: colorShow 4s;
+			-moz-animation: colorShow 4s;
+			-ms-animation: colorShow 4s;
+			animation: colorShow 4s;
+		}
+
+		div#color-show-continue {
+			-webkit-animation: colorShow 4s infinite;
+			-moz-animation: colorShow 4s infinite;
+			-ms-animation: colorShow 4s infinite;
+			animation: colorShow 4s infinite;
+		}
+
+		@keyframes colorShow {
+			0% { background: #A8DBD6; }
+			25% { background: #EEAD1F; }
+			50% {background: #EA2D50;}
+			100% {background: #AAB85C;}
+		}
+
+		@-moz-keyframes colorShow {
+			0% { background: #A8DBD6; }
+			25% { background: #EEAD1F; }
+			50% {background: #EA2D50;}
+			100% {background: #AAB85C;}
+		}
+
+		@-webkit-keyframes colorShow {
+			0% { background: #A8DBD6; }
+			25% { background: #EEAD1F; }
+			50% {background: #EA2D50;}
+			100% {background: #AAB85C;}
+		}
+
+		div#animation {
+			width: 100%;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="example-container">
+		<div id="color-show-stop">
+			&nbsp;
+		</div>
+
+		<div id="color-show-continue">
+			&nbsp;
+		</div>
+	</div>
+
+	<div>
+		<div id="animation">
+			<div id="img-to-animate">
+				<img src="trent.png" width="220" height="183" />
+			</div>
+		</div>
+	</div>
+</body>
+</html>
