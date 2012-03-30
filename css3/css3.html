@@ -10,25 +10,15 @@
 		<li><a href="examples/borders.html">Borders</a></li>
 		<li><a href="examples/text.html">Text</a></li>
 		<li><a href="examples/font.html">Font Face</a></li>
-		<li><a href="examples/transforms.html">Transformations</a></li>
+		<li><a href="examples/transforms.html">Transforms</a></li>
+		<li><a href="examples/timing-functions.html">Timing</a></li>
 		<li><a href="examples/transitions.html">Transitions</a></li>
 		<li><a href="examples/animations.html">Animations</a></li>
 	</ul>
 
 	<div id="container"></div>
-
+	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			$('a').on('click', function() {
-				$('#container').load($(this).attr('href'));	return false;
-			});
-
-			$('div').on('click', 'div.example-container div', function() {
-				var $this = $(this);
-				$this.toggleClass($this.attr('id'));
-			});
-		});
-	</script>
+	<script src="css3.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

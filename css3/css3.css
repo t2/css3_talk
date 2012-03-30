@@ -5,20 +5,17 @@ body {
 ul {
 	margin: auto;
 	margin-bottom: 20px;
-	width: 600px;
+	text-align: center;
 }
 
 li {
 	display: inline-block;
-	padding: 0 10px;
 	text-decoration: none;
-	font: Helvetica;
+	padding: 0 5px;
 }
 
 a {
-	text-decoration: none;
 	font-family: Helvetica;
-	color: #EA2D50;
 }
 
 div.container {
@@ -38,3 +35,25 @@ div.example-container {
 div.example-container div {
 	cursor: pointer;
 }
+
+/*a {
+	width: 90px;
+	padding: 5px;
+	color: #ea2d50;
+	margin: 0;
+	text-decoration: none;
+	border: 2px solid black;
+	display: inline-block;
+	background-color: #a8dbd6;
+
+	-webkit-transition: color 0.5s, background-color 0.5s, -webkit-transform 0.5s, box-shadow 0.5s;
+	transition: color 0.5s, background-color 0.5s, transform 0.5s, box-shadow 0.5s; 
+}
+
+a:hover {
+	color: black;
+	background-color: #aab85c;
+	-webkit-transform: translate(0px, -10px);
+	transform: translate(0, 20px);
+	box-shadow: 0px 15px 15px -6px black;
+}*/

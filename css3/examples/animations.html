@@ -6,13 +6,13 @@
 	<style type="text/css">
 		div.example-container div {
 			height: 200px;
-			width: 350px;
+			width: 150px;
 			margin-left: 20px;
 			display: inline-block;
 			border: black 3px solid;
 		}
 
-		div#color-show-stop, div#color-show-continue {
+		div#color-show-stop, div#color-show-continue, div#two-keyframes {
 			background-color: #A8DBD6;
 		}
 
@@ -33,29 +33,51 @@
 		@keyframes colorShow {
 			0% { background: #A8DBD6; }
 			25% { background: #EEAD1F; }
-			50% {background: #EA2D50;}
-			100% {background: #AAB85C;}
+			50% { background: #EA2D50; }
+			100% { background: #AAB85C; }
 		}
 
 		@-moz-keyframes colorShow {
 			0% { background: #A8DBD6; }
 			25% { background: #EEAD1F; }
-			50% {background: #EA2D50;}
-			100% {background: #AAB85C;}
+			50% { background: #EA2D50; }
+			100% { background: #AAB85C; }
 		}
 
 		@-webkit-keyframes colorShow {
 			0% { background: #A8DBD6; }
 			25% { background: #EEAD1F; }
-			50% {background: #EA2D50;}
-			100% {background: #AAB85C;}
+			50% { background: #EA2D50; }
+			100% { background: #AAB85C; }
+		}
+
+		div#two-keyframes {
+			-webkit-animation: smallColorShow 3s linear infinite;
+			-moz-animation: smallColorShow 3s linear infinite;
+			-ms-animation: smallColorShow 3s linear infinite;
+			animation: smallColorShow 3s linear infinite;
+		}
+
+		@keyframes smallColorShow {
+			from { background: #a8dbd6; }
+			to { background: #eead1f; }
+		}
+
+		@-webkit-keyframes smallColorShow {
+			from { background: #a8dbd6; }
+			to { background: #eead1f; }
+		}
+
+		@-moz-keyframes smallColorShow {
+			from { background: #a8dbd6; }
+			to { background: #eead1f; }
 		}
 
 		img#animation {
-			-webkit-animation: crazyAnimation 3s infinite;
-			-moz-animation: crazyAnimation 3s infinite;
-			-ms-animation: crazyAnimation 3s infinite;
-			animation: crazyAnimation 3s infinite;
+			-webkit-animation: crazyAnimation 3s infinite 5s alternate;
+			-moz-animation: crazyAnimation 3s infinite 5s alternate;
+			-ms-animation: crazyAnimation 3s infinite 5s alternate;
+			animation: crazyAnimation 3s infinite 5s alternate;
 		}
 
 		@-webkit-keyframes crazyAnimation {
@@ -63,54 +85,46 @@
 				-webkit-transform: translate(-150px, 0px);
 				-moz-transform: translate(-150px, 0px);
 				-o-transform: translate(-150px, 0px);
-				-ms-transform: translate(-150px, 0px);
 				transform: translate(-150px, 0px);
 			}
 			25% {
 				-webkit-transform: scale(2, 4);
 				-moz-transform: scale(2, 4);
 				-o-transform: scale(2, 4);
-				-ms-transform: scale(2, 4);
 				transform: scale(2, 4);
 			}
 			50% {
 				-webkit-transform: skew(30deg, 20deg);
 				-moz-transform: skew(30deg, 20deg);
 				-o-transform: skew(30deg, 20deg);
-				-ms-transform: skew(30deg, 20deg);
 				transform: skew(30deg, 20deg);
 			}
 			75% {
 				-webkit-transform: skew(0deg, 0deg);
 				-moz-transform: skew(0deg, 0deg);
 				-o-transform: skew(0deg, 0deg);
-				-ms-transform: skew(0deg, 0deg);
 				transform: skew(0deg, 0deg);
 
 				-webkit-transform: scale(0.5, 0.25);
 				-moz-transform: scale(0.5, 0.25);
 				-o-transform: scale(0.5, 0.25);
-				-ms-transform: scale(0.5, 0.25);
 				transform: scale(0.5, 0.25);
 			}
 			85% {
 				-webkit-transform: rotate(180deg);
 				-moz-transform: rotate(180deg);
 				-o-transform: rotate(180deg);
-				-ms-transform: rotate(180deg);
 				transform: rotate(180deg);
 			}
 			100% {
 				-webkit-transform: rotate(180deg);
 				-moz-transform: rotate(180deg);
 				-o-transform: rotate(180deg);
-				-ms-transform: rotate(180deg);
 				transform: rotate(180deg);
 
 				-webkit-transform: translate(150px, 0px);
 				-moz-transform: translate(150px, 0px);
 				-o-transform: translate(150px, 0px);
-				-ms-transform: translate(150px, 0px);
 				transform: translate(150px, 0px);
 			}
 		}
@@ -123,6 +137,10 @@
 		</div>
 
 		<div id="color-show-continue">
+			&nbsp;
+		</div>
+
+		<div id="two-keyframes">
 			&nbsp;
 		</div>
 	</div>
