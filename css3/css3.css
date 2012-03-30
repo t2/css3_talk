@@ -36,7 +36,7 @@ div.example-container div {
 	cursor: pointer;
 }
 
-/*a {
+a.styled {
 	width: 90px;
 	padding: 5px;
 	color: #ea2d50;
@@ -50,10 +50,10 @@ div.example-container div {
 	transition: color 0.5s, background-color 0.5s, transform 0.5s, box-shadow 0.5s; 
 }
 
-a:hover {
+a.styled:hover {
 	color: black;
 	background-color: #aab85c;
 	-webkit-transform: translate(0px, -10px);
 	transform: translate(0, 20px);
 	box-shadow: 0px 15px 15px -6px black;
-}*/
+}
